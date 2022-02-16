@@ -1,0 +1,55 @@
+
+int hitungHuruf()
+{
+    int hitung = 0;
+    charQ *q = new charQ();
+    q = head;
+    string current = getFront();
+
+    while (q != NULL)
+    {
+        if (current == q->value)
+        {
+            q->next;
+            hitung++;
+        }
+    }
+
+    return hitung;
+}
+
+
+    Infix
+ 	|   | 
+ 	| - | 
+ 	| ( | 
+ 	|_:_| 
+
+     Postfix
+    (a)|   | 
+       | - | 
+       | ( | 
+       |_:_| Hasil = 1
+
+    (b)| ( | 
+       | - | 
+       | ( | 
+       |_:_| Hasil = 1
+
+    (c)| + |
+       | ( | 
+       | - | 
+       | ( | 
+       |_:_| Hasil = 1 
+
+    (d)|   | 
+       | - | 
+       | ( | 
+       |_:_| Hasil = 1 + 
+
+    (e)| * | 
+       | - | 
+       | ( | 
+       |_:_| Hasil = 1 +
+
+       
